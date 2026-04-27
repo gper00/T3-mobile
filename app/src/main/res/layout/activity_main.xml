@@ -1,103 +1,121 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="24dp"
-    android:background="#FFFFFF">
-
-    <TextView
+    android:fillViewport="true">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Edit Profil"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="24dp" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="24dp"
-        android:scaleType="centerCrop"
-        android:background="#2196F3" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Pekerjaan:"
-        android:textColor="#757575" />
-
-    <Spinner
-        android:id="@+id/spinnerPekerjaan"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:entries="@array/opsi_pekerjaan"
-        android:layout_marginBottom="24dp" />
-
-    <Switch
-        android:id="@+id/switchNotif"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Aktifkan Notifikasi Push"
-        android:textSize="16sp"
-        android:checked="true" android:layout_marginBottom="16dp" />
-
-    <CheckBox
-        android:id="@+id/cbNewsletter"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Berlangganan Email Promo"
-        android:textSize="16sp"
-        android:layout_marginBottom="24dp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Pilih Metode Pembayaran"
-        android:textSize="14sp"
-        android:layout_marginBottom="16dp" />
-
-    <RadioGroup
-        android:id="@+id/rgPembayaran"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp">
-
-        <RadioButton
-            android:id="@+id/rbGopay"
-            android:layout_width="wrap_content"
+        <!-- Nama -->
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="GoPay"
-            android:checked="true" /> <RadioButton
-            android:id="@+id/rbTransfer"
-            android:layout_width="wrap_content"
+            android:text="Nama Lengkap"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/etNama"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Transfer Bank (BCA/Mandiri)" />
+            android:hint="Masukkan nama..."
+            android:inputType="text"/>
 
-        <RadioButton
-            android:id="@+id/rbCash"
-            android:layout_width="wrap_content"
+        <!-- Jenis Kelamin -->
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cash on Delivery (COD)" />
-    </RadioGroup>
+            android:text="Jenis Kelamin"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="SIMPAN PENGATURAN" />
+        <RadioGroup
+            android:id="@+id/rgJenisKelamin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-        <ProgressBar
-        android:id="@+id/progressBar"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:visibility="visible" /> <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Menunggu keputusan bagus pemerintah..."
-        android:gravity="center"
-        android:layout_marginTop="20dp" />
+            <!-- <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LinearLayout"
+                android:textSize="14sp"/> -->
+            <RadioButton
+                android:id="@+id/rbLakilaki"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Laki-laki"
+                android:checked="false"/>
+            <RadioButton
+                android:id="@+id/rbPerempuan"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Perempuan"
+                android:checked="false"/>
+        </RadioGroup>
 
-</LinearLayout>
+        <!-- Hobi -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hobi"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"/>
+        <CheckBox
+            android:id="@+id/cbHobiMembaca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Membaca"/>`
+        <CheckBox
+            android:id="@+id/cbHobiKoding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Koding"/>`
+        <CheckBox
+            android:id="@+id/cbHobiOlahraga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Olahraga"/>`
+        <CheckBox
+            android:id="@+id/cbHobiTidur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tidur"/>`
+
+        <!-- Tombol tampilkann -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tampilkan"
+            android:layout_marginTop="20dp"/>
+
+        <!-- Hasil -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E8EAF6"
+            android:padding="12dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tvHasil"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Cobain kang.."
+                android:textSize="14sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</ScrollView>

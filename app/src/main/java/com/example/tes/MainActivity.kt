@@ -10,5 +10,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val btnSubmit = findViewById<Button>(R.id.btnSubmit)
+
+        btnSubmit.setOnClickListener {
+            val tvHasil = findViewById<TextView>(R.id.tvHasil)
+            tvHasil.text = "sawiiit"
+        }
     }
 }

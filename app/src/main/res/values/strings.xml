@@ -1,9 +1,10 @@
 <resources>
-    <string name="app_name">Tes</string>
-    <string-array name="opsi_pekerjaan">
-        <item>Mahasiswa</item>
-        <item>Programmer</item>
-        <item>Dosen</item>
-        <item>Lainnya</item>
+    <string name="app_name">Form Identitas Mahasiswa</string>
+
+    <string-array name="hobbies">
+        <item>Membaca</item>
+        <item>Coding</item>
+        <item>Olahraga</item>
+        <item>Tidur</item>
     </string-array>
 </resources>
