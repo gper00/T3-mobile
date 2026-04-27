@@ -3,21 +3,101 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello"
-        android:textSize="24sp"/>
+        android:text="Edit Profil"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+        android:scaleType="centerCrop"
+        android:background="#2196F3" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pekerjaan:"
+        android:textColor="#757575" />
+
+    <Spinner
+        android:id="@+id/spinnerPekerjaan"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:entries="@array/opsi_pekerjaan"
+        android:layout_marginBottom="24dp" />
+
+    <Switch
+        android:id="@+id/switchNotif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aktifkan Notifikasi Push"
+        android:textSize="16sp"
+        android:checked="true" android:layout_marginBottom="16dp" />
+
+    <CheckBox
+        android:id="@+id/cbNewsletter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Berlangganan Email Promo"
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pilih Metode Pembayaran"
+        android:textSize="14sp"
+        android:layout_marginBottom="16dp" />
+
+    <RadioGroup
+        android:id="@+id/rgPembayaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp">
+
+        <RadioButton
+            android:id="@+id/rbGopay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GoPay"
+            android:checked="true" /> <RadioButton
+            android:id="@+id/rbTransfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transfer Bank (BCA/Mandiri)" />
+
+        <RadioButton
+            android:id="@+id/rbCash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cash on Delivery (COD)" />
+    </RadioGroup>
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Klik Saya"/>
+        android:text="SIMPAN PENGATURAN" />
+
+        <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:visibility="visible" /> <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menunggu keputusan bagus pemerintah..."
+        android:gravity="center"
+        android:layout_marginTop="20dp" />
 
 </LinearLayout>

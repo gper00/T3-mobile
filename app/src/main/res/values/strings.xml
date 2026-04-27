@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Tes</string>
-    <string name="hello">Hello, Android!</string>
+    <string-array name="opsi_pekerjaan">
+        <item>Mahasiswa</item>
+        <item>Programmer</item>
+        <item>Dosen</item>
+        <item>Lainnya</item>
+    </string-array>
 </resources>
