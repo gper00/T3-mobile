@@ -72,22 +72,22 @@
             android:id="@+id/cbHobiMembaca"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Membaca"/>`
+            android:text="Membaca"/>
         <CheckBox
             android:id="@+id/cbHobiKoding"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Koding"/>`
+            android:text="Koding"/>
         <CheckBox
             android:id="@+id/cbHobiOlahraga"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Olahraga"/>`
+            android:text="Olahraga"/>
         <CheckBox
             android:id="@+id/cbHobiTidur"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Tidur"/>`
+            android:text="Tidur"/>
 
         <!-- Tombol tampilkann -->
         <Button
